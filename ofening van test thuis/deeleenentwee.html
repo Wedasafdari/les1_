@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WERELDBEVOLKING</title>
+</head>
+
+<body>
+    <table id="uitkomst"></table>
+
+    
+    
+    <script>
+        
+        let uitkomst = document.getElementById("uitkomst");
+       
+        let wereldDelen = ["Azie", "Afrika", "Noord-Amerika", "Zuid-Amerika", "Antarctica", "Europa", "Oceanie"];
+        let oppervlakte = [43608000, 30335000, 25349000, 21069501, 13661000, 10498000, 8468300];
+        let inwonerAantallen = [4463000000, 1216000000, 579000000, 423000000, 4000, 741400000, 42000000];
+        let uitkomst1 = "<tr><th>werelddelen</th><th>oppervlakte</th><th>inwoneraantallen</th><th>oppervlakte  per persoon</th><th>wereldbevolking</th></tr>";
+
+        for (let i = 0; i < wereldDelen.length; i++) {
+            let x = oppervlakte[i] / inwonerAantallen[i];
+            let y = inwonerAantallen[i] / 8772307000 * 100;
+            uitkomst1 += "<tr><td>" + wereldDelen[i] + "</td><td>" + oppervlakte[i] + "</td><td>" + inwonerAantallen[i] + "</td><td>" + x + "</td><td>" + Math.round(y) + "</td></tr>";
+            uitkomst.innerHTML = uitkomst1;
+        }
+
+       
+        
+
+    </script>
+</body>
+
+</html>

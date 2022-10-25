@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>bevolking van de wereld</h1>
+
+    <input type="number" id="invoerV">
+    <label for="invoer">voer gtal 1 voor een miljard ,  2 voor twee miljard en etc</label>
+    <br>
+    <input type="button" value="click hier" onclick="tonen()">
+    <p id="result"></p>
+    
+    
+
+
+
+    <script>
+
+     
+     
+
+     function tonen(){
+
+        let invoerV = document.getElementById("invoerV");
+        let result = document.getElementById("result");
+     
+
+        let inveor = invoerV.value;
+
+        
+        
+
+        if(invoer= 1 ){
+            result.innerHTML = "noord amerika, zuid amerika, europa, oceanie, antracteca";
+    
+          } 
+          else if(invoer = 2){
+            result.innerHTML = "noord amerika, afrika, zuid amerika, europa, oceanie, antracteca";
+          }
+          else if(invoer=3){
+            result.innerHTML = "azie, afrika, zuid amerik, noord amerika, europa, oceanie, antracteca";
+          }
+          
+      
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+   
+
+
+
+
+
+
+
+</body>
+</html>
